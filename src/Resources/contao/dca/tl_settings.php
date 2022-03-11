@@ -39,18 +39,18 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['templateparser'] = array
 		),
 		'columnFields'                    => array
 		(
-			'template' => array
-			(
-				'label'                   => &$GLOBALS['TL_LANG']['tl_settings']['templateparser_template'],
-				'exclude'                 => true,
-				'inputType'               => 'text',
-				'eval'                    => array
-				(
-					'tl_class'            => 'w50', 
-					'style'               => 'width:100%', 
-					'mandatory'           => true
-				),
-			),
+			//'template' => array
+			//(
+			//	'label'                   => &$GLOBALS['TL_LANG']['tl_settings']['templateparser_template'],
+			//	'exclude'                 => true,
+			//	'inputType'               => 'text',
+			//	'eval'                    => array
+			//	(
+			//		'tl_class'            => 'w50', 
+			//		'style'               => 'width:100%', 
+			//		'mandatory'           => true
+			//	),
+			//),
 			'search' => array
 			(
 				'label'                   => &$GLOBALS['TL_LANG']['tl_settings']['templateparser_search'],
@@ -82,6 +82,19 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['templateparser'] = array
 				'label'                   => &$GLOBALS['TL_LANG']['tl_settings']['templateparser_info'],
 				'exclude'                 => true,
 				'inputType'               => 'text',
+				'eval'                    => array
+				(
+					'tl_class'            => 'w50', 
+					'style'               => 'width:100%', 
+					'mandatory'           => false
+				),
+			),
+			'active' => array
+			(
+				'label'                   => &$GLOBALS['TL_LANG']['tl_settings']['templateparser_active'],
+				'exclude'                 => true,
+				'default'                 => true,
+				'inputType'               => 'checkbox',
 				'eval'                    => array
 				(
 					'tl_class'            => 'w50', 

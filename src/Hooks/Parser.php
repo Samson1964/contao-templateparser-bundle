@@ -23,9 +23,10 @@ class Parser extends \Frontend
 
 	public function parse($strContent, $strTemplate)
 	{
+		//print_r($strTemplate)."<br>";
 		foreach($this->ersetzen as $item)
 		{
-			if($strTemplate == $item['template'])
+			if($item['active'])
 			{
 				// Ausgabe modifizieren
 				$strContent = str_replace($item['search'], $item['replace'], $strContent);
