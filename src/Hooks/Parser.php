@@ -9,13 +9,28 @@ namespace Schachbulle\ContaoTemplateparserBundle\Hooks;
 class Parser extends \Frontend
 {
 
+	protected $ersetzen = array();
+
+	/**
+	 * Constructor
+	 */
+	public function __construct()
+	{
+		if($GLOBALS['TL_CONFIG']['templateparser']) $this->ersetzen = unserialize($GLOBALS['TL_CONFIG']['templateparser']);
+
+		parent::__construct();
+	}
+
 	public function parse($strContent, $strTemplate)
 	{
-
-		if($strTemplate == 'ce_text')
+		foreach($this->ersetzen as $item)
 		{
-			// Ausgabe modifizieren
-		}
+			if($strTemplate == $item['template'])
+			{
+				// Ausgabe modifizieren
+				$strContent = str_replace($item['search'], $item['replace'], $strContent);
+			}
+		};
 
 		return $strContent;
 	}
