@@ -1,5 +1,9 @@
 # Templateparser Changelog
 
+## Version 2.0.0 (2024-05-21)
+
+* Add: PHP8-Unterstützung
+
 ## Version 1.0.0 (2022-03-11)
 
 * Fix: Falscher Hook - richtig ist outputFrontendTemplate statt parseFrontendTemplate
