@@ -1,5 +1,10 @@
 # Templateparser Changelog
 
+## Version 2.0.1 (2024-05-21)
+
+* Add: Anleitung in README
+* Change: Pflichtersetzung deaktiviert
+
 ## Version 2.0.0 (2024-05-21)
 
 * Add: PHP8-Unterstützung

@@ -39,18 +39,6 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['templateparser'] = array
 		),
 		'columnFields'                    => array
 		(
-			//'template' => array
-			//(
-			//	'label'                   => &$GLOBALS['TL_LANG']['tl_settings']['templateparser_template'],
-			//	'exclude'                 => true,
-			//	'inputType'               => 'text',
-			//	'eval'                    => array
-			//	(
-			//		'tl_class'            => 'w50', 
-			//		'style'               => 'width:100%', 
-			//		'mandatory'           => true
-			//	),
-			//),
 			'search' => array
 			(
 				'label'                   => &$GLOBALS['TL_LANG']['tl_settings']['templateparser_search'],
@@ -61,7 +49,7 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['templateparser'] = array
 					'tl_class'            => 'w50', 
 					'style'               => 'width:100%', 
 					'allowHtml'           => true,
-					'mandatory'           => true
+					'mandatory'           => false
 				),
 			),
 			'replace' => array
