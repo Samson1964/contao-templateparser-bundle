@@ -1,7 +1,14 @@
 {
     "name": "schachbulle/contao-templateparser-bundle",
     "type": "contao-bundle",
-    "description": "Templateparser für Contao 4",
+    "description": "Ersetzt Inhalte in der fertigen Seite, kurz bevor sie an den Browser ausgeliefert wird.",
+    "keywords": [
+        "contao",
+        "template",
+        "ersetzen",
+        "ausgabe"
+    ],
+    "homepage": "https://github.com/Samson1964/contao-templateparser-bundle",
     "license": "LGPL-3.0-or-later",
     "authors": [
         {
